@@ -34,7 +34,7 @@ video {
     width: 151px;
     height: 143px;
     cursor: pointer;
-    position: absolute;
+    position: fixed;
     top: 1%;
     left: 1%;
 }
@@ -43,6 +43,7 @@ video {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: fixed;
 }
 
 #main-container #nav-bar #nav-content {
@@ -71,4 +72,62 @@ video {
     font-weight: 400;
     color: grey;
     cursor: pointer;
+}
+
+/* #nav-bar:before {
+    content: '';
+    width: 3px;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.15);
+    position: absolute;
+    left: 39%;
+    top: 0;
+} */
+#left {
+    border: 0.01px solid grey;
+    position: fixed;
+    width: 0px;
+    height: 100%;
+    background: grey;
+    left: 39%;
+}
+
+#right {
+    border: 0.01px solid grey;
+    position: fixed;
+    width: 0px;
+    height: 100%;
+    background: grey;
+    left: 66%;
+}
+
+#footer {
+    position: fixed;
+    width: 100%;
+    height: 10%;
+    /* border: 1px solid; */
+    bottom: 0%;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    align-items: center;
+}
+
+#footer #social {
+    display: flex;
+    gap: 20px;
+    margin-left: 18px;
+}
+#footer #social #social-emoji{
+    color: white;
+    cursor: pointer;
+}
+footer #social a{
+    text-decoration: none;
+}
+#footer #copy-right{
+    margin-right: 24px;
+}
+#footer #copy-right h6{
+    color: white;
 }
