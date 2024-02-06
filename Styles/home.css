@@ -118,16 +118,56 @@ video {
     gap: 20px;
     margin-left: 18px;
 }
-#footer #social #social-emoji{
+
+#footer #social #social-emoji {
     color: white;
     cursor: pointer;
 }
-footer #social a{
+
+footer #social a {
     text-decoration: none;
 }
-#footer #copy-right{
+
+#footer #copy-right {
     margin-right: 24px;
 }
-#footer #copy-right h6{
+
+#footer #copy-right h6 {
     color: white;
+}
+
+/* .cursor {
+    position: fixed;
+    width: 41px;
+    height: 40px;
+    border-radius: 50%;
+    border-radius: 1px solid white;
+    background-color: white;
+    pointer-events: none;
+    z-index: 9999;
+    transition: transform 0.2s ease;
+} */
+.cursor {
+    position: fixed;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: transparent;
+    /* Set background color to transparent */
+    border: 2px solid white;
+    /* Adjust color and opacity for the border */
+    pointer-events: none;
+    z-index: 9999;
+    transition: transform 0.2s ease;
+}
+
+#vertical-text {
+    color: white;
+}
+
+#vertical-text #first-text {
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%, -50%) rotate(-90deg);
 }
