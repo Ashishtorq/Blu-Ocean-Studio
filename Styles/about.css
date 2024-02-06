@@ -197,22 +197,31 @@ footer #social a {
 }
 
 #about-content{
-    border: 1px solid white;
+    /* border: 1px solid white; */
     height: 75%;
     width: 73%;
     position: absolute;
-    top: 15%;
-    left: 15%;
+    top: 24%;
+    left: 21%;
 }
 #about-content p{
     color: #888889;
 }
-#two-part-content{
-    
+#two-part-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 60px auto;
+    gap: 56px;
 }
 #about-content #two-part-content  #part-1 h1{
     color: white;
+    margin-bottom: 25px;
 }
 #about-content #two-part-content  #part-2 h1{
     color: white;
+    margin-bottom: 25px;
+}
+.misssion, .vision{
+    margin-top: 10px;
 }
