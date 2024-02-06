@@ -23,7 +23,7 @@ video {
     width: 100%;
     height: 100%;
 }
-
+/*  nav bar start */
 #main-container #nav-bar {
     width: 100%;
     height: 15%;
@@ -73,7 +73,15 @@ video {
     color: grey;
     cursor: pointer;
 }
-
+#mobile-nav{
+    display: none;
+}
+@media (max-width:992px) {
+    #nav-content{
+        display: none;
+    }
+}
+ /* nav bar end */
 /* #nav-bar:before {
     content: '';
     width: 3px;
@@ -170,4 +178,12 @@ footer #social a {
     top: 50%;
     left: 40%;
     transform: translate(-50%, -50%) rotate(-90deg);
+    cursor: pointer;
+}
+#vertical-text #second-text {
+    position: absolute;
+    top: 50%;
+    left: 67%;
+    transform: translate(-50%, -50%) rotate(-90deg);
+    cursor: pointer;
 }
